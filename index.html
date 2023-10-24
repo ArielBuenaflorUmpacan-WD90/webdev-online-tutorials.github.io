@@ -1,32 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>WebDev Online Tutorials</title>
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Examples | WebDev Online Tutorials</title>
 
-    <link rel="icon" href="./assets/brand/web-dev-seeklogo.svg" type="image/png"/>    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../assets/brand/web-dev-seeklogo.svg" type="image/png"/>
 
-    <link href="./assets/css/headers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-    <link href="./assets/css/heroes.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
 
       .b-example-divider {
@@ -91,48 +92,11 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-
-      #ftp footer{
-       justify-content: space-between;
-      }
-
-      .bg-img{
-              
-        background-image: url(./assets/background-image/cover-image.jpg); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: top;
-        background-attachment: fixed;
-        position: relative;
-        overflow: hidden;
-        height: 100vh;
-
-      }
-      @media screen and (max-width: 768px){
-        .bg-img{
-         
-          width: 100vw;
-          
-        }
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-        #ftp footer{
-
-          position: fixed;
-          justify-content: center;
-          
-        }
-      }
-
     </style>
 
     
-    <!-- Custom styles for this template -->
-
   </head>
-<body>  
+  <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -148,8 +112,6 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </symbol>
     </svg>
-
-    <!-- Footer -->
 
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -167,8 +129,6 @@
       </symbol>
     </svg>
 
-    <!-- Footer -->
-  
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
@@ -203,218 +163,247 @@
         </li>
       </ul>
     </div>
-      <header class="text-bg-primary fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="./assets/brand/web-dev-seeklogo.svg" width="40" height="35" class="text-bg-light rounded d-inline-block align-top" alt="Bootstrap" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    References
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#HTML">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
-                      </svg>&nbsp;&nbsp;HTML</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#CSS">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
-                      </svg>&nbsp;&nbsp;CSS</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#JS">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
-                      </svg>&nbsp;&nbsp;Javascript</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#Bootstrap">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
-                        <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
-                        <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
-                      </svg>&nbsp;&nbsp;BOOTSTRAP</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./Pages/Examples.html">Examples</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./Pages/Contact-Us.html">Contact Us</a>
-                </li>
-              </ul>
-              <div class="d-flex text-end">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-light" type="button" id="button-addon2">
-                    <svg class="DocSearch-Search-Icon" width="20" height="20" viewBox="0 0 25 25">
-                      <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 
-                      0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" 
-                      stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </button>
+
+    <header class="text-bg-primary fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/brand/web-dev-seeklogo.svg" width="40" height="35" class="text-bg-light rounded d-inline-block align-top" alt="Bootstrap" loading="lazy">
+          </a>               
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/webdev-online-tutorials.github.io/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  References
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/webdev-online-tutorials.github.io/index.html#HTML">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                    </svg>&nbsp;&nbsp;HTML</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/webdev-online-tutorials.github.io/index.html#CSS">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+                    </svg>&nbsp;&nbsp;CSS</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/webdev-online-tutorials.github.io/index.html#JS">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                    </svg>&nbsp;&nbsp;Javascript</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/webdev-online-tutorials.github.io/index.html#Bootstrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                      <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                      <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+                    </svg>&nbsp;&nbsp;BOOTSTRAP</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/webdev-online-tutorials.github.io/Pages/Contact-Us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex text-end">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light" type="button" id="button-addon2">
+                  <svg class="DocSearch-Search-Icon" width="20" height="20" viewBox="0 0 25 25">
+                    <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 
+                    0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" 
+                    stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+<main>
+  <br><br>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="display-1 text-body-emphasis fw-semibold">Examples</h1>  
+        <p class="lead text-body-emphasis fw-normal">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-3 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm card-body">
+            <a href="/webdev-online-tutorials.github.io/Examples/heroes/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/heroes-image.png" alt="" width="100%"></a>
+            <div class="card-body border border-0">
+              <a href="/webdev-online-tutorials.github.io/Examples/heroes/index.html" class="fw-semibold">Heroes</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">Set the stage on your homepage with heroes that feature clear calls to action.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm card-body">
+            <a href="/webdev-online-tutorials.github.io/Examples/features/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/features-image.png" alt="" width="100%"></a>
+            <div class="card-body border border-0">
+              <a href="/webdev-online-tutorials.github.io/Examples/features/index.html" class="fw-semibold">Features</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">Explain the features, benefits, or other details in your marketing content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm card-body">
+            <a href="/webdev-online-tutorials.github.io/Examples/sidebars/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/sidebars-image.png" alt="" width="100%"></a>
+            <div class="card-body border border-0">
+              <a href="/webdev-online-tutorials.github.io/Examples/sidebars/index.html" class="fw-semibold">Sidebars</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/footers/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/footers-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/footers/index.html" class="fw-semibold">Footers</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Finish every page strong with an awesome footer, big or small.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </header>
-    <main class="container-fluid">  
-      <div class="my-5 bg-img">
-          <br><br>
-          <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4 text-bg-light rounded opacity-75" src="./assets/brand/web-dev-seeklogo.svg" alt="" width="72" height="57">
-            <h1 class="display-5 fw-bold text-light">Resources for Developers</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4 text-light fw-normal">Documenting web technologies, including HTML, CSS, and JavaScript together with the Bootstrap.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="#HTML" class="btn btn-primary btn-lg px-4 me-md-2 fw-semibold link-offset-2 link-underline link-underline-opacity-0 text-light">Get Started</a>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/dropdowns/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/dropdowns-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/dropdowns/index.html" class="fw-semibold">Dropdowns</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Enhance your dropdowns with filters, icons, custom styles, and more.</p>
+                </div>
               </div>
             </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/list-groups/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/list-groups-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/list-groups/index.html" class="fw-semibold">List groups</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Extend list groups with utilities and custom styles for any content.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/modals/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/modals-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/modals/index.html" class="fw-semibold">Modals</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Transform modals to serve any purpose, from feature tours to dialogs.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/badges/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/badges-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/badges/index.html" class="fw-semibold">Badges</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Make badges work with custom inner HTML and new looks.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm card-body">
+              <a href="/webdev-online-tutorials.github.io/Examples/pricing/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/pricing-image.png" alt="" width="100%"></a>
+              <div class="card-body border border-0">
+                <a href="/webdev-online-tutorials.github.io/Examples/pricing/index.html" class="fw-semibold">Pricing</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text">Example pricing page built with Cards and featuring a custom header and footer.</p>
+                </div>
+              </div>
           </div>
-      </div>
+      </div>         
+        <div class="col">
+            <div class="card shadow-sm card-body">
+                <a href="/webdev-online-tutorials.github.io/Examples/buttons/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/buttons-image.png" alt="" width="100%"></a>
+                <div class="card-body border border-0">
+                  <a href="/webdev-online-tutorials.github.io/Examples/buttons/index.html" class="fw-semibold">Buttons</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text">Create custom buttons for just about any use case with utilities.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+                <a href="/webdev-online-tutorials.github.io/Examples/jumbotrons/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/jumbotrons-image.png" alt="" width="100%"></a>
+                <div class="card-body border border-0">
+                  <a href="/webdev-online-tutorials.github.io/Examples/jumbotrons/index.html" class="fw-semibold">Jumbotrons</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text">Create modernized versions of the classic Bootstrap component.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm card-body">
+                <a href="/webdev-online-tutorials.github.io/Examples/album/index.html"><img class="border border-2 rounded border-primary" src="/webdev-online-tutorials.github.io/assets/Example-images/album-image.png" alt="" width="100%"></a>
+                <div class="card-body border border-0">
+                  <a href="/webdev-online-tutorials.github.io/Examples/album/index.html" class="fw-semibold">Album</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text">Simple one-page template for photo galleries, portfolios, and more.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<br><br>
+<div class="container-fluid p-3 bg-body-tertiary">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">      
+      <img src="../assets/brand/web-dev-seeklogo.svg" width="40" height="35" class="mb-3 me-2 mb-md-0 d-inline-block align-top text-bg-light rounded" alt="Bootstrap" loading="lazy">  
+      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc.</span>
+    </div>
     
-    <section id="HTML" class="p-5">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/Reference-image/HTML.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300" height="auto" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">HTML: HyperText Markup Language</h1>
-            <p class="lead fw-normal">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
-            <p class="lead d-flex justify-content-md-start fw-normal mb-0">
-              <a class="icon-link icon-link-hover fw-semibold" href="./HTML-References-&-Examples/HTML-page.html">Browse HTML Tutorials 
-                <svg class="bi">
-                  <use xlink:href="#arrow-right">
-                    <symbol id="arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </symbol>
-                  </use>
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>  
+    <ul class="nav col-md-4 justify-content-center d-flex">
+      <li class="nav-item"><a href="/webdev-online-tutorials.github.io/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="/webdev-online-tutorials.github.io/index.html#HTML" class="nav-link px-2 text-body-secondary">References</a></li>
+      <li class="nav-item"><a href="/webdev-online-tutorials.github.io/Pages/Examples.html" class="nav-link px-2 text-body-secondary">Examples</a></li>
+      <li class="nav-item"><a href="/webdev-online-tutorials.github.io/Pages/FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="/webdev-online-tutorials.github.io/Pages/Contact-Us.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+    </ul>
 
-    <section id="CSS" class="p-5">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/Reference-image/CSS.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="380" height="auto" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CSS: Cascading Style Sheets</h1>
-            <p class="lead fw-normal">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
-            <p class="lead d-flex justify-content-md-start fw-normal mb-0">
-              <a class="icon-link icon-link-hover fw-semibold" href="./CSS-References-&-Examples/CSS-page.html">Browse CSS Tutorials 
-                <svg class="bi">
-                  <use xlink:href="#arrow-right">
-                    <symbol id="arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </symbol>
-                  </use>
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <section id="JS" class="p-5">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/Reference-image/Javascript.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="355" height="auto" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">JS: JavaScript</h1>
-            <p class="lead fw-normal">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
-            <p class="lead d-flex justify-content-md-start fw-normal mb-0">
-              <a class="icon-link icon-link-hover fw-semibold" href="./Javascript-References-&-Examples/Javascript-page.html">Browse JavaScript Tutorials 
-                <svg class="bi">
-                  <use xlink:href="#arrow-right">
-                    <symbol id="arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </symbol>
-                  </use>
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Bootstrap" class="p-5">
-      <div class="container col-xxl-8 px-4 py-3">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/Reference-image/Bootstarp.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450" height="auto" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Build fast, responsive sites with Bootstrap</h1>
-            <p class="lead fw-normal">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
-            <p class="lead d-flex justify-content-md-start fw-normal mb-0">
-              <a class="icon-link icon-link-hover fw-semibold" href="./Bootstrap-References-&-Examples/Bootstrap-page.html">Browse Bootstrap Tutorials 
-                <svg class="bi">
-                  <use xlink:href="#arrow-right">
-                    <symbol id="arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </symbol>
-                  </use>
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <div class="container-fluid p-3 bg-body-tertiary">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex justify-content-start d-flex" id="ftp">
-        <a href="#" class="mb-2 me-2 mb-md-0 text-decoration-none">
-          <img src="./assets/brand/web-dev-seeklogo.svg" width="40" height="35" class="d-inline-flex align-top text-bg-light rounded opacity-75" alt="Bootstrap" loading="lazy">
-        </a>
-        <span class="mb-3 p-2 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc.</span>
-      </div>
-
-      <div class="col-md-4">
-        <ul class="nav list-unstyled justify-content-center d-flex">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="./index.html#HTML" class="nav-link px-2 text-body-secondary">References</a></li>
-          <li class="nav-item"><a href="./Pages/Examples.html" class="nav-link px-2 text-body-secondary">Examples</a></li>
-          <li class="nav-item"><a href="./Pages/FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="./Pages/Contact-Us.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <ul class="nav list-unstyled justify-content-end d-flex" id="ftp">
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-
-
-    <script src="./assets/js/color-modes.js"></script>
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    </body>
 </html>
