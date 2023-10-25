@@ -17,6 +17,11 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      html, body{
+          max-width: 100%;
+          padding: 0 auto;
+          margin: 0 auto;          
+      }      
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -92,7 +97,17 @@
 
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
+      }    
+      @media (max-width: 380px) {
+
+        html, body{
+          max-width: 100%;
+          padding: 0 auto;
+          margin: 0 auto;
+          overflow-x: hidden;
+        }
       }
+
     </style>
 
     
